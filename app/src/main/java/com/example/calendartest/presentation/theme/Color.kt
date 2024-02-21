@@ -11,3 +11,4 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 val Blurred = Color(0x7C727272)
+val HeaderBackground = Color(0xFFBEBEBE)

@@ -35,22 +35,22 @@ internal fun CalendarRow(
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurface,
             modifier = Modifier
-                .fillMaxHeight()
-                .weight(0.3f)
                 .border(
                     color = Color.Black,
                     width = 1.dp
                 )
+                .fillMaxHeight()
+                .weight(0.3f)
                 .padding(all = 4.dp)
         )
         if(model != null) {
             CalendarItem(
                 modifier = Modifier
-                    .weight(0.7f)
                     .border(
                         color = Color.Black,
                         width = 1.dp
                     )
+                    .weight(0.7f)
                     .padding(all = 4.dp),
                 model = model
             )
@@ -60,11 +60,11 @@ internal fun CalendarRow(
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier
-                    .weight(0.7f)
                     .border(
                         color = Color.Black,
                         width = 1.dp
                     )
+                    .weight(0.7f)
                     .padding(all = 4.dp),
             )
         }

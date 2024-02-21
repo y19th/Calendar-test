@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.example.calendartest.presentation.theme.HeaderBackground
 
 @Composable
 internal fun CalendarHeader(
@@ -26,7 +27,7 @@ internal fun CalendarHeader(
             .fillMaxWidth()
             .height(IntrinsicSize.Max)
             .then(modifier)
-            .background(color = MaterialTheme.colorScheme.surface)
+            .background(color = HeaderBackground)
     ) {
         Text(
             text = leftText,

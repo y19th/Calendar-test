@@ -4,12 +4,18 @@
     <string name="header_date">Дата</string>
     <string name="header_holiday">Праздник</string>
     <string name="main_screen_days_count">Всего дней в году: %1$d</string>
-    <string name="holiday_localname">Название: %1$s</string>
+    <string name="holiday_localname">Локальное название: %1$s</string>
+    <string name="holiday_name">Название: %1$s</string>
     <string name="holiday_countries">Для стран: %1$s</string>
+    <string name="holiday_year_start">Год начала: %1$d</string>
     <string name="holiday_types">Тип: %1$s</string>
+    <string name="holiday_fixed">Фиксированный: %1$s</string>
+    <string name="holiday_global">Глобальный: %1$s</string>
     <string name="no_holiday">Нет праздника</string>
     <string name="year_now">Выбранный год: %1$d</string>
     <string name="country_now">Выбранный код страны: %1$s</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
 
     <string name="country_russia">Россия</string>
     <string name="country_usa">США</string>
