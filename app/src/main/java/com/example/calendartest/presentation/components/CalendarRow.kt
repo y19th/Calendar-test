@@ -1,12 +1,15 @@
 package com.example.calendartest.presentation.components
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -28,6 +31,10 @@ internal fun CalendarRow(
         modifier = Modifier
             .fillMaxWidth()
             .height(IntrinsicSize.Max)
+            .border(
+                width = 1.dp,
+                color = Color.Black
+            )
             .then(modifier)
     ) {
         Text(
@@ -35,22 +42,24 @@ internal fun CalendarRow(
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurface,
             modifier = Modifier
-                .border(
-                    color = Color.Black,
-                    width = 1.dp
-                )
                 .fillMaxHeight()
                 .weight(0.3f)
                 .padding(all = 4.dp)
         )
+
+        Spacer(
+            modifier = Modifier
+                .width(1.dp)
+                .fillMaxHeight()
+                .background(
+                    color = Color.Black
+                )
+        )
+
         if(model != null) {
             CalendarItem(
                 modifier = Modifier
-                    .border(
-                        color = Color.Black,
-                        width = 1.dp
-                    )
-                    .weight(0.7f)
+                    .weight(1f)
                     .padding(all = 4.dp),
                 model = model
             )
@@ -60,11 +69,7 @@ internal fun CalendarRow(
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier
-                    .border(
-                        color = Color.Black,
-                        width = 1.dp
-                    )
-                    .weight(0.7f)
+                    .weight(1f)
                     .padding(all = 4.dp),
             )
         }

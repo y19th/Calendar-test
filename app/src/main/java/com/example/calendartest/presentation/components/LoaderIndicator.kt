@@ -10,7 +10,6 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.blur
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
@@ -22,7 +21,6 @@ fun LoaderIndicator() {
         modifier = Modifier
             .fillMaxSize()
             .background(color = Blurred)
-            .blur(4.dp)
             .pointerInput(null) {
                 detectTapGestures {  } // need to block user scroll
             }

@@ -4,10 +4,12 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -27,6 +29,10 @@ internal fun CalendarHeader(
             .fillMaxWidth()
             .height(IntrinsicSize.Max)
             .then(modifier)
+            .border(
+                width = 1.dp,
+                color = Color.Black
+            )
             .background(color = HeaderBackground)
     ) {
         Text(
@@ -36,23 +42,26 @@ internal fun CalendarHeader(
             modifier = Modifier
                 .fillMaxHeight()
                 .weight(0.3f)
-                .border(
-                    color = Color.Black,
-                    width = 1.dp
-                )
                 .padding(all = 4.dp)
         )
+
+
+        Spacer(
+            modifier = Modifier
+                .width(1.dp)
+                .fillMaxHeight()
+                .background(
+                    color = Color.Black
+                )
+        )
+
 
         Text(
             text = rightText,
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurface,
             modifier = Modifier
-                .weight(0.7f)
-                .border(
-                    color = Color.Black,
-                    width = 1.dp
-                )
+                .weight(1f)
                 .padding(all = 4.dp),
         )
 

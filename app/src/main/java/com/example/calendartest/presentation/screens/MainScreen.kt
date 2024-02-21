@@ -129,7 +129,9 @@ fun MainScreen(
                         rightText = stringResource(id = R.string.header_holiday)
                     )
                 }
-                items(dateList) {
+                items(
+                    items = dateList
+                ) {
                     CalendarRow(
                         leftText = it,
                         model = state.holidayList.find { model -> model.date == it }
