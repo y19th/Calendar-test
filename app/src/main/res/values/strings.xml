@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Calendar(test)</string>
+    <string name="main_screen_title">Календарь</string>
+    <string name="header_date">Дата</string>
+    <string name="header_holiday">Праздник</string>
+    <string name="main_screen_days_count">Всего дней в году: %1$d</string>
+    <string name="holiday_localname">Название: %1$s</string>
+    <string name="holiday_countries">Для стран: %1$s</string>
+    <string name="holiday_types">Тип: %1$s</string>
+    <string name="no_holiday">Нет праздника</string>
+    <string name="year_now">Выбранный год: %1$d</string>
+    <string name="country_now">Выбранный код страны: %1$s</string>
+
+    <string name="country_russia">Россия</string>
+    <string name="country_usa">США</string>
+    <string name="country_denmark">Дания</string>
+    <string name="country_japan">Япония</string>
+    <string name="country_unknown">Неизвестная</string>
+</resources>
